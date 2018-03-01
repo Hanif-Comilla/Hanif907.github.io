@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Student Registration Form</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+
+<body>
+    <form method="post">
+        <h1>Student Registration Form</h1>
+        <section>
+		<p>
+            <fieldset>
+              <legend>Title</legend>
+              <ul>
+                  <li>
+                    <label for="title_1">
+                      <input type="radio" id="title_1" name="title" value="M" >
+                      Mister
+                    </label>
+                  </li>
+                  <li>
+                    <label for="title_2">
+                      <input type="radio" id="title_2" name="title" value="Ms">
+                      Miss
+                    </label>
+                  </li>
+              </ul>
+            </fieldset>
+			</p>
+			
+			
+			
+            <p>
+              <label for="name">
+                <span>Name: </span>
+              </label>
+              <input type="text" id="name" name="user-name" maxlength="30"  pattern="[A-Za-z]*"  >
+            </p>
+			
+			
+            <p>
+              <label for="dept">
+                <span>Department:</span>
+              </label>
+              <select id="dept" name="deptname">
+                <option value="cse">CSE</option>
+                <option value="bba">BBA</option>
+                <option value="eee">EEE</option>
+              </select>
+            </p>
+			
+			
+             <p>
+              <label for="number">
+                <span>Roll Number:</span>
+              </label>
+                <input type="num" id="number" name="number" maxlength="8" pattern="057[0-9]{5}">
+            </p>
+			
+			
+            <p>
+              <label for="mail">
+                <span>E-mail: </span>
+              </label>
+              <input type="email" id="mail" name="mail">
+            </p>
+			
+			
+            <p>
+              <label for="password">
+                <span>Password: </span>
+              </label>
+              <input type="password" id="password" name="password" maxlength="30" min="8" pattern="([A-Za-z]|[0-9])*.{8,}">
+            </p>
+        </section>
+		
+		
+        <section>
+            <p> <button type="submit">Submit</button> </p>
+        </section>
+    </form>
+    
+    
+</body>
+
+</html>
